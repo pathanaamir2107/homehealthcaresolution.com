@@ -1,0 +1,251 @@
+                                    body {
+                                        font-family: sans-serif;
+                                    }
+                                    
+                                    html {
+                                        scroll-behavior: smooth;
+                                    }
+                                    
+                                    .nav-item a:hover {
+                                        color: #FF4500 !important;
+                                    }
+                                    
+                                    .nav-link {
+                                        font-size: 14px !important;
+                                    }
+                                    
+                                    .active {
+                                        color: #FF4500 !important;
+                                    }
+                                    
+                                    .fa,
+                                    .fas {
+                                        margin-right: 5px;
+                                    }
+                                    
+                                    .navbar-nav li a::before {
+                                        content: '[';
+                                        position: absolute;
+                                        height: 24px;
+                                        bottom: 48px;
+                                        margin-left: 4px;
+                                        opacity: 0;
+                                        font-size: 22px;
+                                        transition: .4s;
+                                    }
+                                    
+                                    .navbar-nav li a:hover::before {
+                                        margin-left: -8px;
+                                        opacity: 1;
+                                    }
+                                    
+                                    .navbar-nav li a::after {
+                                        content: ']';
+                                        position: absolute;
+                                        height: 24px;
+                                        bottom: 48px;
+                                        margin-left: -4px;
+                                        opacity: 0;
+                                        font-size: 22px;
+                                        transition: .4s;
+                                    }
+                                    
+                                    .navbar-nav li a:hover::after {
+                                        opacity: 1;
+                                        margin-left: 0;
+                                    }
+                                    
+                                    .nav-item a {
+                                        font-size: 14px;
+                                    }
+                                    
+                                    .search:hover {
+                                        color: #FF4500;
+                                        cursor: pointer;
+                                    }
+                                    
+                                    h1 {
+                                        font-family: sans-serif;
+                                        padding: 145px 95px;
+                                    }
+                                    
+                                    .bgimg_home {
+                                        background: url(../Imgs/banner.jpg);
+                                        height: 90vh;
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-color: #0000005e;
+                                        background-blend-mode: darken;
+                                    }
+                                    
+                                    .bgimg_service {
+                                        background: url(../Imgs/des-moines-handyman-banner.jpg);
+                                        height: 90vh;
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-color: #0000005e;
+                                        background-blend-mode: darken;
+                                    }
+                                    
+                                    .bgimg_manteam {
+                                        background: url(../Imgs/banner.png);
+                                        height: 90vh;
+                                        background-position: center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-color: #0000005e;
+                                        background-blend-mode: darken;
+                                    }
+                                    
+                                    .carousel-indicators li {
+                                        width: 10px;
+                                        height: 10px;
+                                        border-radius: 50%;
+                                    }
+                                    
+                                    .overlay span {
+                                        animation: solution 2s linear infinite;
+                                    }
+                                    
+                                    @keyframes solution {
+                                        from {
+                                            filter: hue-rotate(0);
+                                        }
+                                        to {
+                                            filter: hue-rotate(360deg);
+                                        }
+                                    }
+                                    
+                                    .img {
+                                        background-image: url(Imgs/banner.png);
+                                        background-size: cover;
+                                        background-position: center center;
+                                        height: 85vh;
+                                    }
+                                    
+                                    .overlay {
+                                        background: #0000005e;
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                    
+                                    .rounded-circle {
+                                        width: 130px;
+                                        height: 130px;
+                                        padding: 12px;
+                                        transition: .3s;
+                                    }
+                                    
+                                    .services:hover .rounded-circle {
+                                        transform: scale(1.2, 1.2);
+                                        box-shadow: 0 0 10px 8px #00000029;
+                                        background: white;
+                                        border: 3px solid #FF4500
+                                    }
+                                    
+                                    .services:hover p {
+                                        color: #FF4500;
+                                    }
+                                    
+                                    .service-banner {
+                                        background-color: #d3d3d32e;
+                                    }
+                                    
+                                    .services {
+                                        width: 270px;
+                                        height: 250px;
+                                        border: 1px solid transparent;
+                                        transition: .3s;
+                                    }
+                                    
+                                    .circle1 {
+                                        border: 1px solid transparent;
+                                        width: 80px;
+                                        height: 80px;
+                                        border-radius: 50%;
+                                    }
+                                    
+                                    .card-body {
+                                        padding: 0;
+                                    }
+                                    
+                                    .carousel-control-next,
+                                    .carousel-control-prev {
+                                        width: 25%;
+                                    }
+                                    
+                                    hr {
+                                        opacity: 1 !important;
+                                    }
+                                    
+                                    .map {
+                                        width: 100%;
+                                        height: 450px;
+                                    }
+                                    
+                                    .animate-img {
+                                        animation: rounded_img 3s linear infinite;
+                                    }
+                                    
+                                    @keyframes rounded_img {
+                                        from {
+                                            transform: rotatey(0);
+                                        }
+                                        to {
+                                            transform: rotatey(360deg);
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width:992px) {
+                                        .navbar-nav li a::before {
+                                            content: '';
+                                        }
+                                        .navbar-nav li a::after {
+                                            content: '';
+                                        }
+                                        .wave img {
+                                            height: 55px;
+                                        }
+                                    }
+                                    
+                                    @media screen and (max-width:576px) {
+                                        .bgimg_home {
+                                            background: url(../Imgs/banner.jpg);
+                                            height: 50vh;
+                                            background-position: center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat;
+                                            background-color: #0000005e;
+                                            background-blend-mode: darken;
+                                        }
+                                        .bgimg_service {
+                                            background: url(../Imgs/des-moines-handyman-banner.jpg);
+                                            height: 50vh;
+                                            background-position: center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat;
+                                            background-color: #0000005e;
+                                            background-blend-mode: darken;
+                                        }
+                                        .bgimg_manteam {
+                                            background: url(../Imgs/banner.png);
+                                            height: 50vh;
+                                            background-position: center;
+                                            background-size: cover;
+                                            background-repeat: no-repeat;
+                                            background-color: #0000005e;
+                                            background-blend-mode: darken;
+                                        }
+                                        h1 {
+                                            font-size: 26px !important;
+                                            font-family: sans-serif;
+                                            padding: 27% 4%;
+                                        }
+                                        .carousel-indicators li {
+                                            width: 8px;
+                                            height: 8px;
+                                            border-radius: 50%;
+                                        }
+                                    }
